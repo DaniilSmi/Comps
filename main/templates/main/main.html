@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} COMPS {% endblock %}
+
+{% block content %}
+	<hr>
+				<p>
+						{% for c in comments %}
+							<p style="color:black;" >
+								<strong>{{c.first_name}} {{c.last_name}}</strong><br>
+								{{c.comment_texr}}
+							</p>
+						{% endfor %}
+				</p>
+	<hr>
+{% endblock %}

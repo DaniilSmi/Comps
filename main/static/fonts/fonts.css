@@ -1,0 +1,31 @@
+/*Zurita*/
+@font-face {
+	font-family: 'Zurita';
+	src: url(ZURITA.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Prokyon*/
+@font-face {
+	font-family: 'Prokyon';
+	src: url(DTL.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*nami com*/
+@font-face {
+	font-family: 'Nami';
+	src: url(NamiCom-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*whitey*/
+@font-face {
+	font-family: 'whitey' sans-serif;
+	src: url(whitney-lightitalicsc.ttf) format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %} fdsfsdfdsdffs {% endblock %}</title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/min.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto:ital@1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'fonts/fonts.css' %}">
+	</head>
+	<body>
+	<div class="block1">
+				<div class="container">
+					<div class="header">
+						<p class="logo">COMPS</p>
+						<div class="navbar">
+							<a class="nav1" href="#"><nav class="nav11"><p class="center">ABOUT</p></nav></a>
+							<a class="nav1" href="#"><nav class="nav11"><p class="center">WORK</p></nav></a>
+							<a class="nav1" href="#"><nav class="nav11"><p class="center">HOME</p></nav></a>
+							<a class="nav1" href="#"><nav class="nav11"><p class="center">BLOG</p></nav></a>
+						</div>
+					</div>
+					<p class="icon">THE ICON<br>OF FUTURE</p>
+					<div class="js"><a href="#"><div class="buttblock"><p class="buttblockk">BUY PC RIGHT NOW</p></div></a></div> 
+				</div>
+			</div>
+			<div class="block2">
+				<div class="container">
+					<div class="js"><p class="stores">THE STORES WE WORK WITH</p></div>
+					<div class="js"><div class="slider"></div></div>
+					<div class="js"><p class="support">PLEASE SUPPORT IT</p></div>
+					<div class="js">
+						<div class="hj">
+							<img src="{% static 'images/nout1.png' %}" class="nout1" height="240px"> 
+							<div class="js"><p class="store">eldarado</p></div>
+						</div>
+						<div class="hj2">
+							<img src="{% static 'images/nout2.png' %}" class="nout2" height="240px">
+							<div class="js"><p class="store">mvideo</p></div>
+						</div>
+					</div>
+					<div class="js"><img src="{% static 'images/nout3.png' %}" class="nout3" height="240px"></div>
+					<div class="js"><p class="store">dns</p></div>	
+				</div>
+			</div>
+			<div class="block3">
+				<div class="container">
+					<div class="js"><p class="how">HOW IT LOOKS LIKE</p></div>
+					<div class="js"><div class="slider"></div></div>
+					<div class="js"><img src="{% static 'images/macbook.png' %}" class="mak"></div>
+					<div class="js"><img src="{% static 'images/iphone.png' %}" class="iphone"></div>
+				</div>
+			</div>
+			<div class="block4">
+				<div class="container">
+					<p class="contact">CONTACT ME</p>
+					<div class="lsider"></div>
+					<div class="another">
+						<a href="#"><img src="{% static 'images/tw.png' %}" class="ico"></a>
+						<a href="#"><img src="{% static 'images/rd.png' %}" class="ico"></a>
+						<a href="#"><img src="{% static 'images/gt.png' %}" class="ico"></a>
+						<a href="#"><img src="{% static 'images/in.png' %}" class="ico"></a>
+						<a href="#"><img src="{% static 'images/wh.png' %}" class="ico"></a>
+					</div>
+				</div>
+			</div>
+			<div class="block5">
+				<div class="container">
+					<div class="js"><p class="get">GET IN TOUCH</p></div>
+					<div class="js"><div class="slider"></div></div>
+					<form method="POST" action="{% url 'main:leave_comment' %}"><div class="js">
+					{% csrf_token %}<div class="inputs">
+							<input type="text" name="fn" placeholder="FIRST NAME*" class="inputt" required=""><br>
+							<input type="text" name="ln" placeholder="LAST NAME*" class="inputt" required=""><br>
+							<input type="text" name="em" placeholder="EMAIL*" class="inputt" required=""><br>
+						</div>
+						<textarea class="area" name="text" placeholder="MESSEGE*" required=""></textarea><br>
+					</div>
+					<div class="js"><a href="#"><button class="buttblock" id="gh2" type="submit"><p class="buttblockk">SEND MESSEGE</p></button></a></div>
+				</form>
+				</div>
+			</div>
+			<div class="block7"><div class="container">{% block content %}
+					
+		{% endblock %}</div></div>
+			<div class="block6">
+				<div class="container">
+					<div class="js"><img src="{% static 'images/pautine.jpg' %}" class="pautine"></div>
+					<div class="js"><p class="gf">Copyright: Ali Sayed, All Rights Reserved.</p></div>
+				</div>
+			</div>
+		
+	</body>
+</html>
