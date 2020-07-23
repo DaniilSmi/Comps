@@ -132,4 +132,4 @@ STATIC_URL = '/static/'
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
 
-WSGI_APPLICATION = 'application'
+
